@@ -7,7 +7,7 @@ services:
     build:
       dockerfile: Dockerfile
     ports:
-        - "${APP_PORT:-80}:80"
+        - "9900:9900"
     volumes:
        - ".:/public_html"
        - "./conf.d:/etc/nginx/conf.d"
